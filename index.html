@@ -10,46 +10,70 @@ EMAIL: drakes1@uci.edu
   <meta charset="utf-8">
   <meta name="author" content="Drake Smith">
   <meta name="description" content="XR, 3D, 2D Portfolio">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="index.css">
-  <link rel="javascript" href="index.js">
-   <!-- you would also link to Bootstrap here! -->
   <title>Drake's Software Engineering</title>
 </head>
-
-<!--
-Tab links
--->
-<div class="links">
-  <button class="tablinks" onclick="openTab(event,'Home')">Home</button>
-  <button class="tablinks" onclick="openTab(event,'About')">About</button>
-  <button class="tablinks" onclick="openTab(event,'Portfolio')">Portfolio</button>
-</div>
-
-<!--
-Tab innards
--->
-<div id="Home" class="tabcontent">
-  <h3>Home</h3>
-  <p>Hello, world!</p>
-</div>
-
-<div id="About" class="tabcontent">
-  <h3>About</h3>
-  <p>I am a senior in software engineering at the University of California, Irvine.
-    My work focuses on building experiences in Unity and Unreal as well as on web development.
-  </p>
-</div>
-
-<div id="Portfolio" class="tabcontent">
-  <h3>Portfolio</h3>
-  <p>Insert projects here.</p>
-</div>
-
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+  <div class="container-fluid">
+    <!--
+    Tab links
+    -->
+      <div class="row">
+        <nav class="col-12 col-lg-2 navbar navbar-expand-lg nvbar-light bg-lavender
+          sticky-top align-items-start p-0">
+          <div class="container-fluid flex-lg-column">
+            <span class="navbar-brand d-lg-none">Menu</span>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#tabMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse w-100" id="tabMenu">
+              <div class="tab d-flex flex-column w-100">
+                <button class="tablinks" onclick="openTab(event,'Home')">Home </button>
+                <button class="tablinks" onclick="openTab(event,'About')">About</button>
+                <button class="tablinks" onclick="openTab(event,'Portfolio')">Portfolio</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      
+
+        <!--
+        Tab innards
+        -->
+        <main class="col-12 col-lg-10 p-4">
+          <div id="Home" class="tabcontent" style="display:block">
+            <h3>Home</h3>
+            <p>Hello, world!</p>
+          </div>
+
+          <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>I am a senior in software engineering at the University of California, Irvine.
+              My work focuses on building experiences in Unity and Unreal as well as on web development.
+            </p>
+          </div>
+
+          <div id="Portfolio" class="tabcontent">
+            <h3>Portfolio</h3>
+            <p>Insert projects here.</p>
+          </div>
+        </main>
+
+      <div class="col">
+        <p>
+          <a href="http://validator.w3.org/check?uri=referer">
+            W3C validator
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

@@ -1,17 +1,18 @@
 .tab{
-    overflow: hidden;
     border: 1px solid #ccc;
     background-color: lavender;
 }
 
 .tab button {
+    flex: 1;
+    text-align: left;
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 12px 16px;
     transition: .3s;
+    width: 100%;
 }
 
 .tab button:hover {
@@ -22,15 +23,33 @@
     background-color: #ccc;
 }
 
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
 .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-top: none;
+    position: relative;
+    z-index: 1;
 }
 
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: lavenderblush;
     background-color: darkblue;
+}
+@media (min-width: 992px) {
+    .navbar {
+        height: 100vh;
+        border-right: 1px solid #ccc;
+        z-index:1050 !important;
+    }
+    .navbar-collapse {
+        align-items: start;
+    }
 }
