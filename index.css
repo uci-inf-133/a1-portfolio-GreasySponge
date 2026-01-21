@@ -29,6 +29,17 @@
     z-index: 1020;
 }
 
+#unity-container {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#unity-canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+
 .tabcontent {
     display: none;
     padding: 20px;
