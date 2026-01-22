@@ -60,4 +60,4 @@ I talked to my friend Tedman (also in the class) about the validator before I no
 
 7. Is there anything special we need to know in order to run your code?
 
-The code should run fine, although the Unity project will not run on a local host. I plan on publishing the page on GitHub pages, which works with Unity's compressor.
+The code should run fine, although the Unity project will not run on a local host. I published it to GitHub Pages to show it works if you would like to check at https://greasysponge.github.io/
